@@ -1,0 +1,15 @@
+EFI partition backup
+====================
+Source disk: disk0s1
+Source mount: /Volumes/NO NAME
+Backup time: 2026-05-08T02:14:23Z UTC
+Host: gimminjun-ui-T14-Gen1.local
+macOS: 26.3 (25D125)
+Repository: https://github.com/mnjn00/T14-Gen1-Tahoe
+
+Layout:
+- EFI_PARTITION_ROOT/ : mirror of the mounted EFI partition root at backup time
+- EFI/                : convenience mirror of EFI_PARTITION_ROOT/EFI for standard OpenCore repo layout
+
+Note:
+- Spotlight indexing was disabled on the EFI volume before the final mirror to avoid volatile .Spotlight-V100 journal changes during copy.
